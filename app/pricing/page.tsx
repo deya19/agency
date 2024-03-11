@@ -1,10 +1,14 @@
 "use client";
+
 import { useState } from "react";
+
 import Link from "next/link";
+
 import { PiCheckCircleFill } from "react-icons/pi";
+
 import Navbar from "@/components/Navbar";
 
-export const plans = [
+const plans = [
   {
     index: 0,
     name: "Basic",
@@ -64,14 +68,12 @@ export const plans = [
   },
 ];
 
-
-
-const Pricing = () => {
+export default function Page() {
   return (
     <div
       className="w-full  md:items-center md:justify-center
-        bg-black/[0.96] antialiased 
-        bg-grid-white/[0.02] relative overflow-hidden"
+      bg-black/[0.96] antialiased 
+      bg-grid-white/[0.02] relative overflow-hidden"
     >
       <Navbar
         scrollToWebsiteDesign={() => {}}
@@ -154,6 +156,4 @@ const Pricing = () => {
       </div>
     </div>
   );
-};
-
-export default Pricing;
+}
