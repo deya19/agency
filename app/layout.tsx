@@ -10,6 +10,9 @@ const font = Poppins(
 export const metadata: Metadata = {
   title: "Agency | Marketing",
   description: "marketing website",
+  icons: {
+    icon: "/logo/logo.svg"
+  }
 };
 
 export default function RootLayout({
